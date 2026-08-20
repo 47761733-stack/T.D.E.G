@@ -1,0 +1,69 @@
+Borrame el login para alumnos y que se use login general para facilitar además de agregar color: 
+
+@startuml
+
+left to right direction
+
+
+
+actor "Secretario" as Sec #line:red
+
+actor "Administrador" as Admin #line:purple
+
+actor "Profesor" as Prof #line:blue
+
+actor "Alumno" as Alum #line:green
+
+
+
+rectangle "Sistema T.D.E.G." {
+
+  usecase "CU 1.1: Inscribir Alumno" as CU1
+
+  usecase "CU 1.2: Registrar Caja Diaria" as CU2
+
+  usecase "CU 1.3: Asignar Profesor" as CU3
+
+  usecase "CU 1.4: Cargar Material" as CU4
+
+  usecase "CU 1.5: Login General" as CU5
+
+  usecase "CU 1.6: Login Alumno" as CU6
+
+  usecase "CU 1.7: Consultar Horarios" as CU7
+
+  usecase "CU 1.8: Descargar Material" as CU8
+
+}
+
+
+
+Sec -[#red]-> CU1
+
+Sec -[#red]-> CU2
+
+Sec -[#red]-> CU5
+
+
+
+Admin -[#purple]-> CU3
+
+Admin -[#purple]-> CU5
+
+
+
+Prof -[#blue]-> CU4
+
+Prof -[#blue]-> CU5
+
+
+
+Alum -[#green]-> CU6
+
+Alum -[#green]-> CU7
+
+Alum -[#green]-> CU8
+
+Alum -[#green]-> CU5
+
+@enduml
