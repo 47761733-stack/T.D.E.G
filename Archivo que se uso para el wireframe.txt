@@ -1,3 +1,4 @@
+Haceme el sistema educacional de t.d.e.g con los siguientes requerimientos: 
 8.1 Requerimientos Funcionales (RF) 
 Área: Registro de Alumnos 
 ● RF-01: Alta de Alumnos: El sistema debe permitir registrar nuevos alumnos ingresando sus datos personales. 
