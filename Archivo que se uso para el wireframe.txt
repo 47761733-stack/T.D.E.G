@@ -1,0 +1,35 @@
+8.1 Requerimientos Funcionales (RF) 
+Área: Registro de Alumnos 
+● RF-01: Alta de Alumnos: El sistema debe permitir registrar nuevos alumnos ingresando sus datos personales. 
+● RF-02: Modificación de Datos de Alumnos: El sistema debe permitir la actualización y edición de la información de los alumnos ya registrados. 
+● RF-03: Baja de Alumnos: El sistema debe permitir la eliminación o baja de registros de alumnos de la base de datos centralizada. 
+● RF-04: Consulta de Historial Académico: El sistema debe permitir visualizar el registro y avance académico de los alumnos matriculados. 
+Área: Registro de Profesores
+● RF-05: Alta de Profesores: El sistema debe permitir el ingreso de nuevos docentes a la plataforma institucional. 
+● RF-06: Modificación de Información Docente: El sistema debe permitir editar y actualizar los datos del personal de profesores. 
+● RF-07: Baja de Profesores: El sistema debe permitir la remoción o baja del registro de profesores en el sistema. 
+● RF-08: Asignación de Cursos: El sistema debe permitir vincular y asignar a los profesores los cursos o materias que dictarán. 
+Área: Registro de Cursos 
+● RF-09: Alta de Cursos: El sistema debe permitir la creación de nuevos cursos en la oferta educativa de la institución. 
+● RF-10: Modificación de Cursos: El sistema debe permitir actualizar los datos e información de las materias o cursos existentes. 
+● RF-11: Eliminación de Cursos: El sistema debe permitir borrar registros de cursos de la base de datos. 
+● RF-12: Gestión de Horarios y Cupos: El sistema debe permitir la configuración y control de las franjas horarias y el límite de vacantes disponibles para cada curso. 
+Área: Inscripciones 
+● RF-13: Asignar Alumnos a Cursos: El sistema debe permitir vincular y matricular a los estudiantes en los cursos disponibles. 
+● RF-14: Registrar Fechas de Inscripción: El sistema debe almacenar automáticamente el día y la hora exacta en la que se efectúa la matrícula del alumno. 
+● RF-15: Controlar Cupos Disponibles: El sistema debe validar de manera automática que existan vacantes antes de confirmar la inscripción de un alumno a un curso. 
+● RF-16: Gestionar Estados de Inscripción: El sistema debe permitir asignar y cambiar la condición o estado de las matrículas de los alumnos. 
+Área: Cuentas y Accesos de Alumnos 
+● RF-17: Acceso Privado para Alumnos: El sistema debe proveer una interfaz de ingreso con credenciales para que cada estudiante visualice su perfil.
+● RF-18: Visualización de Inscripciones: El sistema debe permitir al alumno consultar los cursos en los que se encuentra matriculado activamente. 
+● RF-19: Descarga de Material de Estudio: El sistema debe permitir a los alumnos descargar los apuntes y archivos pedagógicos provistos por los profesores. 
+● RF-20: Consulta de Horarios: El sistema debe mostrar a los alumnos los cronogramas horarios de sus respectivas clases asignadas. 
+Área: Consultas y Auditoría 
+● RF-21: Consulta de Clases y Cursos: El sistema debe permitir realizar búsquedas y filtrados rápidos de las materias y comisiones dictadas en la institución. 
+● RF-22: Consulta Financiera (Gastos e Ingresos): El sistema debe permitir auditar de forma rápida los movimientos financieros y egresos registrados en la caja diaria. 
+● RF-23: Consulta de Cronogramas e Historiales: El sistema debe permitir buscar agendas de actividades, calendarios institucionales e historiales generales de datos. 
+Área: Reportes e Impresión 
+● RF-24: Generación de Comprobantes: El sistema debe generar tickets o comprobantes en formato apto para impresión física tras realizar operaciones administrativas. 
+● RF-25: Emisión de Reportes Administrativos: El sistema debe elaborar informes consolidados sobre el estado operativo de las comisiones y listados de alumnos y profesores. 
+● RF-26: Emisión de Informes Financieros: El sistema debe calcular y emitir reportes resumidos del estado económico de la caja (ingresos y egresos diarios). 
+
