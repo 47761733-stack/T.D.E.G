@@ -1,0 +1,102 @@
+me podes hacer esto en mermaid para el diccionario de datos: erDiagram
+    SECRETARIA {
+        int ID_Secretaria PK
+        string Nombre
+        string Apellido
+        date Fecha_de_nacimiento
+        string Correo_electronico
+        string Telefono
+        datetime Fecha_de_registro
+    }
+
+    MOVIMIENTO_DE_CAJA {
+        int ID_Movimiento PK
+        string Numero_comprobante
+        string Tipo
+        decimal Monto
+        datetime Fecha_hora
+        string Detalle_de_la_operacion
+        string Medio_de_pago
+    }
+
+    INSCRIPCION {
+        int ID_Inscripcion PK
+        date fecha_de_inscripcion
+        string estado_de_la_inscripcion
+        decimal nota_final
+    }
+
+    ALUMNO {
+        int ID_Alumno PK
+        string Dni
+        string Nombre
+        string Apellido
+        date Fecha_de_nacimiento
+        string Correo_electronico
+        string Telefono
+        datetime Fecha_de_registro
+    }
+
+    PROFESOR {
+        int ID_Profesor PK
+        string Nombre
+        string Apellido
+        string Correo_electronico
+        string Especialidad
+        date Fecha_de_Ingreso
+    }
+
+    CURSO {
+        int ID_curso PK
+        string nombre
+        string descripcion
+        int dotacion_en_horas
+        date fecha_de_inicio
+        date fecha_de_finalizacion
+        int cupo_maximo_de_alumnos
+    }
+
+    MATERIAL_DE_ESTUDIO {
+        int ID_Material PK
+        string Titulo
+        string Ruta_archivo
+    }
+
+    USUARIO {
+        int ID_Usuario PK
+        string Nombre_de_usuario
+        string Contraseña
+        string Rol
+        string Estado
+        datetime Creacion
+    }
+
+    EVALUACION {
+        int ID_Evaluacion PK
+        string Titulo
+        string descripcion
+        date fecha_de_entrega
+        int puntaje_maximo
+    }
+
+    CATEGORIA {
+        int ID_Categoria PK
+        string nombre
+        string Descripcion
+    }
+
+    %% Relaciones
+    SECRETARIA ||--o{ MOVIMIENTO_DE_CAJA : "Registra"
+    SECRETARIA ||--o{ INSCRIPCION : "Genera_pago"
+
+    INSCRIPCION }o--|| ALUMNO : "Genera"
+    INSCRIPCION }o--|| CURSO : "Cursa"
+    INSCRIPCION ||--o{ EVALUACION : "Tiene"
+
+    ALUMNO }o--o{ CURSO : "Cursa"
+    PROFESOR }o--o{ CURSO : "Dicta"
+    CURSO ||--o{ MATERIAL_DE_ESTUDIO : "tiene"
+
+    USUARIO ||--o{ CATEGORIA : "Asigna"
+    USUARIO }o--o{ ALUMNO : "Asignado"
+    USUARIO }o--o{ PROFESOR : "Asignado"
